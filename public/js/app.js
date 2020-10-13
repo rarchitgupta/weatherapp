@@ -3,6 +3,7 @@ const search = document.querySelector("input");
 let errorP = document.querySelector("#error");
 let locationP = document.querySelector("#location");
 let weatherP = document.querySelector("#weather-forecast");
+let weatherIcon = document.querySelector("#weather-icon")
 
 
 weatherForm.addEventListener("submit", (event) => {
@@ -20,6 +21,7 @@ weatherForm.addEventListener("submit", (event) => {
             locationP.textContent = '';
         } else {
             errorP.textContent = '';
+            weatherIcon.src = data.forecast.iconSrc;
             locationP.textContent = data.location;
             weatherP.textContent = data.forecast.description + ", " + data.forecast.temperature + ", Humidity: " + data.forecast.humidity;
         }
