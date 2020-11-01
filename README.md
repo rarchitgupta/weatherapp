@@ -23,6 +23,8 @@
 
 ## Overview
 
+![screenshot](public/img/weathershot.png)
+
 A weather app which fetches weather of a location using the [Mapbox](https://www.mapbox.com/) API for Geocoding and [WeatherStack](https://weatherstack.com/) API for Weather.
 
 ### Built With
